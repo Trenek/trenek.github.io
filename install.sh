@@ -6,4 +6,6 @@ mount --mkdir "$1" /mnt/boot
 pacstrap -K /mnt base linux linux-firmware nvim gdisk refind
 
 genfstab -U /mnt >> /mnt/etc/fstab
+curl -fsSL https://trenek.github.io/later.sh -o /mnt/later.sh
+
 arch-chroot /mnt
