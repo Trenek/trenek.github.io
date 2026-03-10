@@ -33,3 +33,5 @@ blkid "$1" >> boot/EFI/BOOT/refind.conf
 
 # EDITOR=nvim visudo
 #     uncomment wheel
+
+timedatectl set-timezone Europe/Warsaw
