@@ -10,7 +10,9 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           texlive `#latex` \
           vlc vlc-plugins-all `#vlc`
 
-git clone https://github.com/Trenek/nvim-config ~/.config/nvim
+git clone --branch 0.11 https://github.com/Trenek/nvim-config ~/.config/nvim
+curl -fsSL https://trenek.github.io/.bashrc -o temp.bashrc
+temp.bashrc >> ~/.bashrc
 
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
@@ -18,12 +20,13 @@ mkrlconf
 systemctl enable sddm
 systemctl enable NetworkManager
 
-# nvim etc/hostname
-# passwd
-# 
-# USE blkid, 
+blkid "$2" >> boot/refind_linux.conf
+blkid "$1" >> boot/EFI/BOOT/refind.conf
 # nvim boot/refind_linux.conf
 # nvim boot/EFI/BOOT/refind.conf
+
+# nvim etc/hostname
+# passwd
 
 # useradd -mG wheel trenek
 # passwd trenek
