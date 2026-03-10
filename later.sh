@@ -1,4 +1,4 @@
-pacman -Sy efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo
+pacman -Sy efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo --noconfirm
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
 
@@ -16,27 +16,27 @@ systemctl enable NetworkManager
 # EDITOR=nvim visudo
 #     uncomment wheel
 
-pacman -Sy nvidia-open nvidia-utils
-pacman -Sy xorg
+pacman -Sy nvidia-open nvidia-utils --noconfirm
+pacman -Sy xorg --noconfirm
 
 # display manager
-pacman -Sy sddm
+pacman -Sy sddm --noconfirm
 systemctl enable sddm
 
 # desktop enviroment
-pacman -Sy plasma kde-applications xdg-user-dirs packagekit-qt6
+pacman -Sy plasma kde-applications xdg-user-dirs packagekit-qt6 --noconfirm
 
 # for nvim config
-pacman -Sy git tree-sitter-cli unzip wget fd xclip
+pacman -Sy git tree-sitter-cli unzip wget fd xclip --noconfirm
 
 # random dev
-pacman -Sy cmake ninja valgrind gnuplot
+pacman -Sy cmake ninja valgrind gnuplot --noconfirm
 
 # vulkan
-pacman -Sy vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools
+pacman -Sy vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools --noconfirm
 
 # latex
-pacman -Sy texlive
+pacman -Sy texlive --noconfirm
 
 # vlc
-pacman -Sy vlc vlc-plugins-all
+pacman -Sy vlc vlc-plugins-all --noconfirm
