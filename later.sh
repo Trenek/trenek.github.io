@@ -23,14 +23,15 @@ systemctl enable NetworkManager
 
 blkid "$2" >> boot/refind_linux.conf
 blkid "$1" >> boot/EFI/BOOT/refind.conf
+
+"the-real-mandarynka" >> etc/hostname
+useradd -mG wheel trenek
+
+# passwd
+# passwd trenek
+
 # nvim boot/refind_linux.conf
 # nvim boot/EFI/BOOT/refind.conf
-
-# nvim etc/hostname
-# passwd
-
-# useradd -mG wheel trenek
-# passwd trenek
 
 # EDITOR=nvim visudo
 #     uncomment wheel
