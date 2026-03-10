@@ -4,11 +4,14 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           sddm  `#display manager` \
           plasma kde-applications xdg-user-dirs packagekit-qt6 `#desktop enviroment` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
+          sof-firmware alsa-utils `#for audio` \
           cmake ninja valgrind gnuplot `#random dev` \
           vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
           texlive `#latex` \
           vlc vlc-plugins-all `#vlc`
-          
+
+git clone https://github.com/Trenek/nvim-config ~/.config/nvim
+
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
 
