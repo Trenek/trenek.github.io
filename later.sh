@@ -20,23 +20,23 @@ pacman -Sy nvidia-open nvidia-utils
 pacman -Sy xorg
 
 # display manager
-sudo pacman -S sddm
-sudo systemctl enable sddm
+pacman -Sy sddm
+systemctl enable sddm
 
 # desktop enviroment
-sudo pacman -S plasma kde-applications xdg-user-dirs packagekit-qt6
+pacman -Sy plasma kde-applications xdg-user-dirs packagekit-qt6
 
 # for nvim config
-sudo pacman -S git tree-sitter-cli unzip wget fd xclip
+pacman -Sy git tree-sitter-cli unzip wget fd xclip
 
 # random dev
-sudo pacman -S cmake ninja valgrind gnuplot
+pacman -Sy cmake ninja valgrind gnuplot
 
 # vulkan
-sudo pacman -S vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools
+pacman -Sy vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools
 
 # latex
-sudo pacman -S texlive
+pacman -Sy texlive
 
 # vlc
-sudo pacman -S vlc vlc-plugins-all
+pacman -Sy vlc vlc-plugins-all
