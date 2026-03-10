@@ -1,12 +1,24 @@
-pacman -Sy efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo --noconfirm
+pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo \
+          nvidia-open nvidia-utils \
+          xorg \
+          sddm  `#display manager` \
+          plasma kde-applications xdg-user-dirs packagekit-qt6 `#desktop enviroment` \
+          git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
+          cmake ninja valgrind gnuplot `#random dev` \
+          vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
+          texlive `#latex` \
+          vlc vlc-plugins-all `#vlc`
+          
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
 
+systemctl enable sddm
 systemctl enable NetworkManager
 
 # nvim etc/hostname
 # passwd
 # 
+# USE blkid, 
 # nvim boot/refind_linux.conf
 # nvim boot/EFI/BOOT/refind.conf
 
@@ -15,28 +27,3 @@ systemctl enable NetworkManager
 
 # EDITOR=nvim visudo
 #     uncomment wheel
-
-pacman -Sy nvidia-open nvidia-utils --noconfirm
-pacman -Sy xorg --noconfirm
-
-# display manager
-pacman -Sy sddm --noconfirm
-systemctl enable sddm
-
-# desktop enviroment
-pacman -Sy plasma kde-applications xdg-user-dirs packagekit-qt6 --noconfirm
-
-# for nvim config
-pacman -Sy git tree-sitter-cli unzip wget fd xclip --noconfirm
-
-# random dev
-pacman -Sy cmake ninja valgrind gnuplot --noconfirm
-
-# vulkan
-pacman -Sy vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools --noconfirm
-
-# latex
-pacman -Sy texlive --noconfirm
-
-# vlc
-pacman -Sy vlc vlc-plugins-all --noconfirm
