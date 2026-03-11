@@ -3,6 +3,8 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           xorg \
           lemurs `#display manager` \
           plasma `#desktop enviroment` \
+          contour  `#terminal emulator` \
+          qutebrowser `#web browser` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           sof-firmware alsa-utils `#for audio` \
           cmake ninja valgrind gnuplot `#random dev` \
