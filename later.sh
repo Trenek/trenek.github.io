@@ -39,5 +39,3 @@ nvim boot/EFI/BOOT/refind.conf
 EDITOR=nvim visudo
 
 timedatectl set-timezone Europe/Warsaw
-
-rm later.sh
