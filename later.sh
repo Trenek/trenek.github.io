@@ -1,7 +1,7 @@
 pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo \
           nvidia-open nvidia-utils \
           xorg \
-          lemurs `#display manager` \
+          lemurs `#display manager (login screen)` \
           plasma `#desktop enviroment` \
           contour  `#terminal emulator` \
           qutebrowser `#web browser` \
