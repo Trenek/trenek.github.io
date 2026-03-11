@@ -25,6 +25,8 @@ useradd -mG wheel trenek
 
 echo "Give Root Password"
 passwd
+echo "Give Trenek Password"
+passwd Trenek
 
 nvim boot/refind_linux.conf
 nvim boot/EFI/BOOT/refind.conf
