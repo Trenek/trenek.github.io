@@ -9,7 +9,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
           texlive `#latex` \
           vlc vlc-plugins-all `#vlc` \
-          power-profiles-daemon '#wiatraczki, bateria'
+          power-profiles-daemon `#wiatraczki, bateria`
 
 git clone --branch 0.11 https://github.com/Trenek/nvim-config ~/.config/nvim
 curl -fsSL https://trenek.github.io/.bashrc -o temp.bashrc
