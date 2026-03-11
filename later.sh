@@ -28,13 +28,14 @@ blkid "$1" >> boot/EFI/BOOT/refind.conf
 "the-real-mandarynka" >> etc/hostname
 useradd -mG wheel trenek
 
-# passwd
-# passwd trenek
+echo "Give Root Password"
+passwd
+echo "Give Trenek Password"
+passwd trenek
 
-# nvim boot/refind_linux.conf
-# nvim boot/EFI/BOOT/refind.conf
+nvim boot/refind_linux.conf
+nvim boot/EFI/BOOT/refind.conf
 
-# EDITOR=nvim visudo
-#     uncomment wheel
+EDITOR=nvim visudo
 
 timedatectl set-timezone Europe/Warsaw
