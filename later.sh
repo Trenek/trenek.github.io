@@ -14,6 +14,10 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           discord \
           power-profiles-daemon `#wiatraczki, bateria`
 
+git clone https://aur.archlinux.org/google-chrome
+makepkg -sicD google-chrome
+rm -rf google-chrome
+
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
 
