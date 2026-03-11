@@ -1,8 +1,8 @@
 pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo \
           nvidia-open nvidia-utils \
           xorg \
-          sddm  `#display manager` \
-          plasma `plasma kde-applications xdg-user-dirs packagekit-qt6` `#desktop enviroment` \
+          lidm `lemurs` `#display manager` \
+          plasma `#desktop enviroment` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           sof-firmware alsa-utils `#for audio` \
           cmake ninja valgrind gnuplot `#random dev` \
