@@ -31,7 +31,7 @@ nvim boot/EFI/BOOT/refind.conf
 
 EDITOR=nvim visudo
 
-curl -fsSL https://trenek.github.io/user.sh -o /mnt/user.sh
-chmod 777 /mnt/user.sh
+curl -fsSL https://trenek.github.io/user.sh -o user.sh
+chmod 777 user.sh
 
 su trenek
