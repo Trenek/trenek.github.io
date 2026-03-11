@@ -1,7 +1,7 @@
 pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo \
           nvidia-open nvidia-utils \
           xorg \
-          lidm `lemurs` `#display manager` \
+          lemurs `#display manager` \
           plasma `#desktop enviroment` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           sof-firmware alsa-utils `#for audio` \
@@ -14,7 +14,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
 
-systemctl enable sddm
+systemctl enable lemurs.service
 systemctl enable NetworkManager
 
 blkid "$2" >> boot/refind_linux.conf
