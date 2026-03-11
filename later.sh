@@ -2,7 +2,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           nvidia-open nvidia-utils \
           xorg \
           sddm  `#display manager` \
-          plasma kde-applications xdg-user-dirs packagekit-qt6 `#desktop enviroment` \
+          lxqt breeze-icons `plasma kde-applications xdg-user-dirs packagekit-qt6` `#desktop enviroment` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           sof-firmware alsa-utils `#for audio` \
           cmake ninja valgrind gnuplot `#random dev` \
@@ -10,11 +10,6 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           texlive `#latex` \
           vlc vlc-plugins-all `#vlc` \
           power-profiles-daemon `#wiatraczki, bateria`
-
-git clone --branch 0.11 https://github.com/Trenek/nvim-config ~/.config/nvim
-curl -fsSL https://trenek.github.io/.bashrc -o temp.bashrc
-./temp.bashrc >> ~/.bashrc
-rm temp.bashrc
 
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
@@ -30,12 +25,20 @@ useradd -mG wheel trenek
 
 echo "Give Root Password"
 passwd
-echo "Give Trenek Password"
-passwd trenek
 
 nvim boot/refind_linux.conf
 nvim boot/EFI/BOOT/refind.conf
 
 EDITOR=nvim visudo
 
+su trenek
 timedatectl set-timezone Europe/Warsaw
+git clone --branch 0.11 https://github.com/Trenek/nvim-config ~/.config/nvim
+
+curl -fsSL https://trenek.github.io/.bashrc -o temp.bashrc
+chmod temp.bashrc
+./temp.bashrc >> ~/.bashrc
+rm temp.bashrc
+
+echo "Give Trenek Password"
+passwd
