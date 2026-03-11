@@ -11,6 +11,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
           texlive `#latex` \
           vlc vlc-plugins-all `#vlc` \
+          discord \
           power-profiles-daemon `#wiatraczki, bateria`
 
 refind-install --usedefault "$1" --alldrivers
