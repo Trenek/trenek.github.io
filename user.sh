@@ -7,4 +7,6 @@ sudo chmod 777 google-chrome
 makepkg -sicD google-chrome
 sudo rm -rf google-chrome
 
+kwriteconfig6 --file kwalletrc --group Wallet --key Enabled false
+
 source ~/.bashrc
