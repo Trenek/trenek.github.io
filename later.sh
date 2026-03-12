@@ -2,7 +2,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           nvidia-open nvidia-utils \
           xorg \
           lemurs `#display manager (login screen)` \
-          plasma-desktop `#desktop enviroment` \
+          plasma-desktop plasma-nm `#desktop enviroment` \
           contour  `#terminal emulator` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           sof-firmware alsa-utils `#for audio` \
