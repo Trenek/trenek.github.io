@@ -3,6 +3,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           xorg \
           lemurs `#display manager (login screen)` \
           plasma `#desktop enviroment` \
+          dolphin `#file explorer` \
           contour  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
           sof-firmware alsa-utils `#for audio` \
