@@ -2,14 +2,14 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           nvidia-open nvidia-utils \
           xorg \
           lemurs `#display manager (login screen)` \
-          plasma `#desktop enviroment` \
+          plasma-desktop `#desktop enviroment` \
           contour  `#terminal emulator` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           sof-firmware alsa-utils `#for audio` \
           cmake ninja valgrind gnuplot `#random dev` \
-          vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
-          texlive `#latex` \
-          vlc vlc-plugins-all `#vlc` \
+          `#vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools vulkan` \
+          `#texlive latex` \
+          `#vlc vlc-plugins-all vlc` \
           discord \
           power-profiles-daemon `#wiatraczki, bateria`
 
