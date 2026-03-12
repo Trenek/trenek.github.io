@@ -2,11 +2,6 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           nvidia-open nvidia-utils \
           xorg \
           lemurs `#display manager (login screen)` \
-          `#plasma-desktop plasma-nm plasma-pa kscreen `#desktop enviroment` \
-          `#spectacle `#kinda bloated` `#for screenshots` \
-          `#contour  `#terminal emulator` \
-          `#power-profiles-daemon wiatraczki, bateria` \
-          `#sof-firmware alsa-utils for audio` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           cmake ninja valgrind gnuplot `#random dev` \
           vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
