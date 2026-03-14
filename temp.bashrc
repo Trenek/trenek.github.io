@@ -19,6 +19,13 @@ hg() { history | grep "$1" --color=always; } # history grep
 fif() { grep "$1" -nrIi . --color=always; } # find in files
 fg() { find . | grep "$1" --color; } # find grep
 
+aurInstall() {
+    sudo git clone "https://aur.archlinux.org/$1"
+    sudo chmod 777 "$1"
+    makepkg -sicD "$1"
+    sudo rm -rf "$1"
+}
+
 # Pretty Looks
 # \h for machine name
 # \u for user name
