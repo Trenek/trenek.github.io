@@ -19,8 +19,8 @@ mkrlconf
 systemctl enable lemurs.service
 systemctl enable NetworkManager
 
-blkid "$2" >> boot/refind_linux.conf
-blkid "$1" >> boot/EFI/BOOT/refind.conf
+echo -n "UUID=$(sudo blkid $2 -s UUID -o value)\"" >> boot/refind_linux.conf
+echo -n "UUID=$(sudo blkid $1 -s UUID -o value)" >> boot/EFI/BOOT/refind.conf
 
 "the-real-mandarynka" >> etc/hostname
 useradd -mG wheel trenek
