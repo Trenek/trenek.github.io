@@ -15,4 +15,6 @@ aurInstall "miktex"
 sudo miktexsetup --shared=yes finish
 kwriteconfig6 --file kwalletrc --group Wallet --key Enabled false
 
+git config --global init.defaultBranch master
+
 source ~/.bashrc
