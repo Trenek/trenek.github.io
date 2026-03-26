@@ -13,6 +13,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           vlc vlc-plugins-all `#vlc` \
           noto-fonts-cjk noto-fonts-emoji noto-fonts `#some multilingual fonts` \
           7zip \
+          ghc haskell-language-server `#haskell` \
           discord
 
 refind-install --usedefault "$1" --alldrivers
