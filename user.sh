@@ -17,4 +17,6 @@ kwriteconfig6 --file kwalletrc --group Wallet --key Enabled false
 
 git config --global init.defaultBranch master
 
+ssh-keygen -t ed25519 -C "mateusz.sas@vp.pl"
+
 source ~/.bashrc
