@@ -39,4 +39,4 @@ EDITOR=nvim visudo
 curl -fsSL https://trenek.github.io/user.sh -o user.sh
 chmod 777 user.sh
 
-su trenek
+su trenek -c "./user.sh"
