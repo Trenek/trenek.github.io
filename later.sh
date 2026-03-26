@@ -4,7 +4,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           lemurs `#display manager (login screen)` \
           plasma `#desktop enviroment` \
           dolphin `#file explorer` \
-          contour  `#terminal emulator` \
+          kitty  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
           sof-firmware alsa-utils `#for audio` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
