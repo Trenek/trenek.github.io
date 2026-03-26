@@ -12,6 +12,7 @@ pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_su
           vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
           vlc vlc-plugins-all `#vlc` \
           noto-fonts-cjk noto-fonts-emoji noto-fonts `#some multilingual fonts` \
+          7zip \
           discord
 
 refind-install --usedefault "$1" --alldrivers
