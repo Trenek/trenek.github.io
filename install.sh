@@ -9,4 +9,4 @@ genfstab -U /mnt >> /mnt/etc/fstab
 curl -fsSL https://trenek.github.io/later.sh -o /mnt/install.sh
 chmod 777 /mnt/install.sh
 
-arch-chroot /mnt
+arch-chroot /mnt ./install.sh "$1" "$2"
