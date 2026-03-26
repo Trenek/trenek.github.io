@@ -26,6 +26,8 @@ aurInstall() {
     sudo rm -rf "$1"
 }
 
+alias getSshKey='cat ~/.ssh/id_ed25519.pub'
+
 # Pretty Looks
 # \h for machine name
 # \u for user name
