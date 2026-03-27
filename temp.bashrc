@@ -1,7 +1,7 @@
 unset TZ # for disc sanity
 
-alias edit='nvim ~/.bashrc.user'
-alias sb='source ~/.bashrc.user'
+alias edit='nvim ~/.bashrc'
+alias sb='source ~/.bashrc'
 alias clear='clear; clear'
 alias cls='clear'
 
