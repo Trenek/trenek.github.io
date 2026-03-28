@@ -1,5 +1,5 @@
 pacman -S efibootmgr base-devel linux-headers openssh sudo \
-          mtools `#FAT, MS-DOS, Vfat`
+          mtools `#FAT, MS-DOS, Vfat` \
           dosfstools `#FAT management (mkfs.fat, fsck.fat, fatlabel)` \
           networkmanager network-manager-applet wireless_tools wpa_supplicant dialog `#network things` \
           nvidia-open nvidia-utils \
