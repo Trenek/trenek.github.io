@@ -1,4 +1,7 @@
-pacman -S efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant dialog mtools dosfstools base-devel linux-headers openssh sudo \
+pacman -S efibootmgr base-devel linux-headers openssh sudo \
+          mtools `#FAT, MS-DOS, Vfat`
+          dosfstools `#FAT management (mkfs.fat, fsck.fat, fatlabel)` \
+          networkmanager network-manager-applet wireless_tools wpa_supplicant dialog `#network things` \
           nvidia-open nvidia-utils \
           xorg \
           lemurs `#display manager (login screen)` \
