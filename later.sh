@@ -14,6 +14,7 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           cmake ninja valgrind gnuplot `#random dev` \
           vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
           vlc vlc-plugins-all `#vlc` \
+          l3afpad `#notatnik`
           noto-fonts-cjk noto-fonts-emoji noto-fonts `#some multilingual fonts` \
           7zip \
           ghc haskell-language-server `#haskell` \
