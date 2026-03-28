@@ -11,6 +11,7 @@ aurInstall() {
 
 aurInstall "google-chrome"
 aurInstall "miktex"
+aurInstall "xmount" # informatyka sledcza
 
 sudo miktexsetup --shared=yes finish
 kwriteconfig6 --file kwalletrc --group Wallet --key Enabled false
