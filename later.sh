@@ -18,7 +18,8 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           noto-fonts-cjk noto-fonts-emoji noto-fonts `#some multilingual fonts` \
           7zip \
           ghc haskell-language-server `#haskell` \
-          discord
+          discord \
+          qemu-img `#informatyka sledcza`
 
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
