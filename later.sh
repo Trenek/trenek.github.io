@@ -19,7 +19,7 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           7zip \
           ghc haskell-language-server `#haskell` \
           discord \
-          qemu-img libewf `#informatyka sledcza`
+          qemu-img libewf virtualbox `#informatyka sledcza`
 
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
