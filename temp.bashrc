@@ -2,7 +2,7 @@ unset TZ # for disc sanity
 
 alias edit='nvim ~/.bashrc'
 alias sb='source ~/.bashrc'
-alias clear='clear; clear'
+alias clear='tput reset'
 alias cls='clear'
 
 alias nvmi='nvim'
@@ -26,8 +26,6 @@ aurInstall() {
     sudo rm -rf "$1"
 }
 
-alias getSshKey='cat ~/.ssh/id_ed25519.pub'
-
 # Pretty Looks
 # \h for machine name
 # \u for user name
@@ -41,5 +39,7 @@ export PS1="\
 \[\033[1;32m\]\
 "
 trap 'echo -ne "\e[0m"' DEBUG
+
+shopt -u direxpand
 
 clear
