@@ -19,6 +19,7 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           7zip \
           ghc haskell-language-server `#haskell` \
           discord \
+          kalk `#kalkulator` \
           qemu-img libewf virtualbox virtualbox-host-modules-arch `#informatyka sledcza`
 
 refind-install --usedefault "$1" --alldrivers
