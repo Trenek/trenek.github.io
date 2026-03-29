@@ -1,0 +1,16 @@
+TAB: menu-complete
+"\e[Z": menu-complete-backward
+
+set completion-ignore-case on
+set menu-complete-display-prefix on
+set show-all-if-unmodified on
+set show-all-if-ambiguous on # list after first tab
+
+# kolorki
+set colored-stats on
+set colored-completion-prefix on
+
+set mark-directories on
+set completion-map-case on
+
+set skip-completed-text on
