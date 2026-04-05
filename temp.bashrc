@@ -1,3 +1,13 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
 unset TZ # for disc sanity
 
 alias edit='nvim ~/.bashrc'
@@ -10,6 +20,9 @@ alias nimv='nvim'
 alias nivm='nvim'
 alias nmiv='nvim'
 alias nmvi='nvim'
+
+alias sshGen='ssh-keygen -t ed25519'
+alias sshGet='~/.ssh/id_ed25519.pub'
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 export HISTSIZE=10000
@@ -41,5 +54,7 @@ export PS1="\
 trap 'echo -ne "\e[0m"' DEBUG
 
 shopt -u direxpand
+
+export PATH="/home/trenek/Documents/nvim-linux-x86_64/bin:$PATH"
 
 clear
