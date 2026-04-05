@@ -12,7 +12,7 @@ alias nmiv='nvim'
 alias nmvi='nvim'
 
 alias sshGen='ssh-keygen -t ed25519'
-alias sshGet='~/.ssh/id_ed25519.pub'
+alias sshGet='cat ~/.ssh/id_ed25519.pub'
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 export HISTSIZE=10000
