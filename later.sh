@@ -34,6 +34,8 @@ systemctl enable NetworkManager
 echo -n "UUID=$(sudo blkid $2 -s UUID -o value)\"" >> boot/refind_linux.conf
 echo -n "UUID=$(sudo blkid $1 -s UUID -o value)" >> boot/EFI/BOOT/refind.conf
 
+ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
+
 "the-real-mandarynka" >> etc/hostname
 useradd -mG wheel trenek
 
