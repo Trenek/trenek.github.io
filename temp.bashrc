@@ -11,6 +11,8 @@ alias nivm='nvim'
 alias nmiv='nvim'
 alias nmvi='nvim'
 
+ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
+
 alias sshGen='ssh-keygen -t ed25519'
 alias sshGet='cat ~/.ssh/id_ed25519.pub'
 
