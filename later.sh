@@ -22,6 +22,7 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           discord \
           kalk `#kalkulator` \
           ark `#archive viewer` \
+          filelight `#disk usage viewer` \
           qemu-img libewf virtualbox virtualbox-host-modules-arch `#informatyka sledcza`
 
 refind-install --usedefault "$1" --alldrivers
