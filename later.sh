@@ -21,7 +21,7 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           ghc haskell-language-server `#haskell` \
           discord \
           kalk `#kalkulator` \
-          zathura `#pdf viewer` \
+          okular `#pdf viewer` \
           ark `#archive viewer` \
           filelight `#disk usage viewer` \
           qemu-img libewf virtualbox virtualbox-host-modules-arch `#informatyka sledcza`
