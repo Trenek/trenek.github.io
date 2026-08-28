@@ -27,7 +27,7 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           qemu-img libewf virtualbox virtualbox-host-dkms `#informatyka sledcza`
 
 refind-install --usedefault "$1" --alldrivers
-mkrlconf
+mkrlconf --force
 
 modprobe vboxdrv # some setup for virtual box
 
