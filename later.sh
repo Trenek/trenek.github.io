@@ -24,7 +24,7 @@ pacman -S efibootmgr base-devel linux-headers openssh sudo \
           okular `#pdf viewer` \
           ark `#archive viewer` \
           filelight `#disk usage viewer` \
-          qemu-img libewf virtualbox virtualbox-host-modules-arch `#informatyka sledcza`
+          qemu-img libewf virtualbox virtualbox-host-dkms `#informatyka sledcza`
 
 refind-install --usedefault "$1" --alldrivers
 mkrlconf
