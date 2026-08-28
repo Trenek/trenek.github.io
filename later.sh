@@ -39,7 +39,7 @@ echo -n "UUID=$(sudo blkid $1 -s UUID -o value)" >> boot/EFI/BOOT/refind.conf
 
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 
-"the-real-mandarynka" >> etc/hostname
+echo "the-real-mandarynka" >> etc/hostname
 useradd -mG wheel trenek
 
 echo "Give Root Password"
