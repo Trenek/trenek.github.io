@@ -27,9 +27,6 @@ pacman -S base-devel linux-headers openssh sudo \
           filelight `#disk usage viewer` \
           qemu-img libewf virtualbox virtualbox-host-dkms `#informatyka sledcza`
 
-#refind-install --usedefault "$1" --alldrivers
-#mkrlconf --force
-
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
