@@ -1,0 +1,9 @@
+
+search --no-floppy --file --set=bootable_efi /EFI/BOOT/BOOTX64.EFI
+if [ -n "${bootable_efi}" ]; then
+  menuentry "EFI Bootable USB" --class unknown {
+    set root="${bootable_efi}"
+    chainloader /EFI/BOOT/BOOTX64.EFI
+    boot
+  }
+fi
