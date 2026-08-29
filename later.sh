@@ -33,17 +33,15 @@ pacman -S base-devel linux-headers openssh sudo \
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
+wget https://github.com/MrVivekRajan/Grub-Themes/releases/download/Aesthetic-Theme/Aesthetic.tar.gz
+sudo tar -xf Aesthetic.tar.gz --no-same-owner -C /boot/grub/themes/
+sudo echo "GRUB_THEME=/boot/grub/themes/Aesthetic/theme.txt" | sudo tee -a /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 modprobe vboxdrv # some setup for virtual box
 
 systemctl enable lemurs.service
 systemctl enable NetworkManager
-
-# echo -n "UUID=$(sudo blkid $2 -s UUID -o value)\"" >> boot/refind_linux.conf
-# echo -n "UUID=$(sudo blkid $1 -s UUID -o value)" >> boot/EFI/BOOT/refind.conf
-
-sudo sed -i "s|root=[^ ]*|root=PARTUUID=$(findmnt -no PARTUUID /boot)|g" boot/EFI/BOOT/refind.conf
-
-sudo sed -i "s|root=[^ ]*|root=PARTUUID=$(findmnt -no PARTUUID /)|g" boot/refind_linux.conf
 
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 
@@ -54,9 +52,6 @@ echo "Give Root Password"
 passwd
 echo "Give Trenek Password"
 passwd trenek
-
-# nvim boot/refind_linux.conf
-# nvim boot/EFI/BOOT/refind.conf
 
 EDITOR=nvim visudo
 
