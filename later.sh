@@ -35,6 +35,8 @@ wget https://github.com/MrVivekRajan/Grub-Themes/releases/download/Aesthetic-The
 sudo tar -xf Aesthetic.tar.gz --no-same-owner -C /boot/grub/themes/
 sudo echo "GRUB_THEME=/boot/grub/themes/Aesthetic/theme.txt" | sudo tee -a /etc/default/grub
 sudo echo "GRUB_DISABLE_OS_PROBER=false" | sudo tee -a /etc/default/grub
+sudo echo "GRUB_DEFAULT=saved" | sudo tee -a /etc/default/grub
+
 curl -fsSL https://trenek.github.io/grub_preconfig | sudo tee -a /etc/grub.d/40_custom
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
