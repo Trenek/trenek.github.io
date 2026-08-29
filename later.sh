@@ -5,6 +5,7 @@ pacman -S base-devel linux-headers openssh sudo \
           networkmanager network-manager-applet wireless_tools wpa_supplicant dialog `#network things` \
           nvidia-open nvidia-utils \
           xorg \
+          mariadb `#database` \
           lemurs `#display manager (login screen)` \
           plasma `#desktop enviroment` \
           dolphin `#file explorer` \
@@ -38,10 +39,13 @@ curl -fsSL https://trenek.github.io/grub_preconfig | sudo tee -a /etc/grub.d/40_
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
+mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
 modprobe vboxdrv # some setup for virtual box
 
 systemctl enable lemurs.service
 systemctl enable NetworkManager
+systemctl enable mariadb.service
 
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 
