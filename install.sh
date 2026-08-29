@@ -1,7 +1,9 @@
 mkfs.ext4 "$2"
+mkfs.ext4 "$3"
 mkfs.fat "$1"
 mount "$2" /mnt
 mount --mkdir "$1" /mnt/boot
+mount --mkdir "$3" /mnt/home
 
 pacstrap -K /mnt base linux linux-firmware nvim gdisk
 
