@@ -7,9 +7,11 @@ aurInstall() {
 
 aurInstall "google-chrome"
 aurInstall "miktex"
-aurInstall "xmount" # informatyka sledcza
 aurInstall "grub-theme-minegrub-world-selection-git"
-aurInstall "scalpel-git" # informatyka śledcza
+
+# informatyka śledcza
+aurInstall "xmount"
+aurInstall "scalpel-git"
 
 wget https://github.com/MrVivekRajan/Grub-Themes/releases/download/Aesthetic-Theme/Aesthetic.tar.gz
 sudo tar -xf Aesthetic.tar.gz --no-same-owner -C /boot/grub/themes/
