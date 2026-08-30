@@ -26,7 +26,7 @@ pacman -S base-devel linux-headers openssh sudo \
           okular `#pdf viewer` \
           ark `#archive viewer` \
           filelight `#disk usage viewer` \
-          qemu-img libewf virtualbox virtualbox-host-dkms `#informatyka sledcza`
+          qemu-img libewf virtualbox virtualbox-host-dkms foremost `#informatyka sledcza`
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
