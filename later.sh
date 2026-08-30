@@ -45,7 +45,7 @@ systemctl enable mariadb.service
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 
 echo "the-real-mandarynka" >> etc/hostname
-useradd -mG wheel trenek
+useradd -mG wheel -u 1000 trenek
 
 echo "Give Root Password"
 passwd
