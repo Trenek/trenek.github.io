@@ -17,7 +17,7 @@ aurInstall "grub-theme-minegrub-world-selection-git"
 
 wget https://github.com/MrVivekRajan/Grub-Themes/releases/download/Aesthetic-Theme/Aesthetic.tar.gz
 sudo tar -xf Aesthetic.tar.gz --no-same-owner -C /boot/grub/themes/
-sudo echo "GRUB_THEME=/boot/grub/themes/Aesthetic/theme.txt" | sudo tee -a /etc/default/grub
+sudo echo "GRUB_THEME=/boot/grub/themes/minegrub-world-selection/theme.txt" | sudo tee -a /etc/default/grub
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
