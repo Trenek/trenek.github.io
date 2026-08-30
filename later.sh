@@ -45,6 +45,8 @@ systemctl enable mariadb.service
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 
 echo "the-real-mandarynka" >> etc/hostname
+
+[ ! -d "/home/trenek" ]; should_download=$?
 useradd -mG wheel -u 1000 trenek
 
 timedatectl set-timezone Europe/Warsaw
@@ -62,7 +64,7 @@ curl -fsSL https://trenek.github.io/get_homefiles.sh -o get_homefiles.sh
 chmod 777 user.sh
 chmod 777 get_homefiles.sh
 
-if [ ! -d "/home/trenek" ]; then
+if [ $should_download = 0 ]; then
     su trenek -c "./get_homefiles.sh"
 fi
 su trenek -c "./user.sh"
