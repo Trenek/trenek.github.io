@@ -57,6 +57,12 @@ passwd trenek
 EDITOR=nvim visudo
 
 curl -fsSL https://trenek.github.io/user.sh -o user.sh
-chmod 777 user.sh
+curl -fsSL https://trenek.github.io/get_homefiles.sh -o get_homefiles.sh
 
+chmod 777 user.sh
+chmod 777 get_homefiles.sh
+
+if [ ! -d "/home/trenek" ]; then
+    su trenek -c "./get_homefiles.sh"
+fi
 su trenek -c "./user.sh"
