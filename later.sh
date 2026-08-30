@@ -47,6 +47,8 @@ ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 echo "the-real-mandarynka" >> etc/hostname
 useradd -mG wheel -u 1000 trenek
 
+timedatectl set-timezone Europe/Warsaw
+
 echo "Give Root Password"
 passwd
 echo "Give Trenek Password"
