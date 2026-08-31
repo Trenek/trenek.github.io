@@ -4,10 +4,10 @@ pacman -S base-devel linux-headers openssh sudo \
           dosfstools `#FAT management (mkfs.fat, fsck.fat, fatlabel)` \
           networkmanager network-manager-applet wireless_tools wpa_supplicant dialog `#network things` \
           nvidia-open nvidia-utils \
-          xorg \
+          xorg xorg-server \
           mariadb `#database` \
           sddm `#lemurs` `#display manager (login screen)` \
-          plasma `#desktop enviroment` \
+          plasma plasma-x11-session kwin-x11 `#desktop enviroment` \
           dolphin `#file explorer` \
           kitty  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
