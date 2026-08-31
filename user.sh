@@ -20,6 +20,8 @@ sudo echo "GRUB_THEME=/boot/grub/themes/minegrub-world-selection/theme.txt" | su
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
+
 sudo miktexsetup --shared=yes finish
 kwriteconfig6 --file kwalletrc --group Wallet --key Enabled false
 
