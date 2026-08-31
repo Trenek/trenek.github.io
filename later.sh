@@ -6,7 +6,7 @@ pacman -S base-devel linux-headers openssh sudo \
           nvidia-open nvidia-utils \
           xorg xorg-server \
           mariadb `#database` \
-          sddm `#lemurs` `#display manager (login screen)` \
+          lemurs `#display manager (login screen)` \
           plasma plasma-x11-session kwin-x11 `#desktop enviroment` \
           dolphin `#file explorer` \
           kitty  `#terminal emulator` \
@@ -38,8 +38,7 @@ mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
 modprobe vboxdrv # some setup for virtual box
 
-# systemctl enable lemurs.service
-systemctl enable sddm.service
+systemctl enable lemurs.service
 systemctl enable NetworkManager
 systemctl enable mariadb.service
 
