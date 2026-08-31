@@ -43,6 +43,7 @@ systemctl enable sddm.service
 systemctl enable NetworkManager
 systemctl enable mariadb.service
 
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 
 echo "the-real-mandarynka" >> etc/hostname
