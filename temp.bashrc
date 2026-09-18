@@ -1,9 +1,20 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
 unset TZ # for disc sanity
 
 alias edit='nvim ~/.bashrc'
 alias sb='source ~/.bashrc'
 alias clear='tput reset'
 alias cls='clear'
+alias fixAudio='systemctl --user restart pipewire pipewire-pulse wireplumber'
 
 alias nvmi='nvim'
 alias nimv='nvim'
