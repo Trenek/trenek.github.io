@@ -13,9 +13,7 @@ aurInstall "grub-theme-minegrub-world-selection-git"
 aurInstall "xmount"
 aurInstall "scalpel-git"
 
-wget https://github.com/MrVivekRajan/Grub-Themes/releases/download/Aesthetic-Theme/Aesthetic.tar.gz
-sudo tar -xf Aesthetic.tar.gz --no-same-owner -C /boot/grub/themes/
-sudo rm ./Aesthetic.tar.gz
+sh ./grub-theme-minegrub-world-selection-git/install.sh
 sudo echo "GRUB_THEME=/boot/grub/themes/minegrub-world-selection/theme.txt" | sudo tee -a /etc/default/grub
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
