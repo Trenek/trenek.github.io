@@ -14,6 +14,7 @@ pacman -S base-devel linux-headers openssh sudo \
           sof-firmware alsa-utils `#for audio` \
           git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
           cmake ninja valgrind gnuplot `#random dev` \
+          texlive-basic biber `# latex` \
           renderdoc `#debuging utils for graphics programming` \
           vulkan-icd-loader vulkan-headers vulkan-validation-layers vulkan-tools `#vulkan` \
           vlc vlc-plugins-all `#vlc` \
