@@ -6,7 +6,6 @@ aurInstall() {
 }
 
 aurInstall "google-chrome"
-aurInstall "miktex"
 aurInstall "grub-theme-minegrub-world-selection-git"
 
 sh ./grub-theme-minegrub-world-selection-git/install.sh
