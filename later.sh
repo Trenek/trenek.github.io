@@ -25,8 +25,7 @@ pacman -S base-devel linux-headers openssh sudo \
           kalk `#kalkulator` \
           okular `#pdf viewer` \
           ark `#archive viewer` \
-          filelight `#disk usage viewer` \
-          qemu-img libewf virtualbox virtualbox-host-dkms foremost `#informatyka sledcza`
+          filelight `#disk usage viewer`
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -35,8 +34,6 @@ curl -fsSL https://trenek.github.io/grub_settings | sudo tee -a /etc/default/gru
 curl -fsSL https://trenek.github.io/grub_preconfig | sudo tee -a /etc/grub.d/40_custom
 
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
-
-modprobe vboxdrv # some setup for virtual box
 
 systemctl enable lemurs.service
 systemctl enable NetworkManager
