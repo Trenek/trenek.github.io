@@ -7,7 +7,7 @@ pacman -S base-devel linux-headers openssh sudo \
           xorg xorg-server \
           mariadb `#database` \
           lemurs `#display manager (login screen)` \
-          plasma plasma-x11-session kwin-x11 `#desktop enviroment` \
+          plasma `#desktop enviroment` \
           dolphin `#file explorer` \
           kitty  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
