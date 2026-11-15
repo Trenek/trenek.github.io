@@ -7,7 +7,7 @@ pacman -S base-devel linux-headers openssh sudo \
           xorg xorg-server xorg-xinit xterm \
           mariadb `#database` \
           greetd greetd-tuigreet `#display manager (login screen)` \
-          plasma `#desktop enviroment` \
+          cinnamon `#desktop enviroment` \
           dolphin `#file explorer` \
           kitty  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
