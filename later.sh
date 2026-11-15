@@ -37,7 +37,7 @@ curl -fsSL https://trenek.github.io/grub_preconfig | sudo tee -a /etc/grub.d/40_
 
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
-systemctl enable lemurs.service
+systemctl enable greetd.service
 systemctl enable NetworkManager
 systemctl enable mariadb.service
 
