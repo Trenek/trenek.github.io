@@ -34,6 +34,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 curl -fsSL https://trenek.github.io/grub_settings | sudo tee -a /etc/default/grub
 curl -fsSL https://trenek.github.io/grub_preconfig | sudo tee -a /etc/grub.d/40_custom
+curl -fsSL https://trenek.github.io/greetd-config.toml -o /etc/greetd/config.toml
 
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
