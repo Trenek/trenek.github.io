@@ -6,7 +6,7 @@ pacman -S base-devel linux-headers openssh sudo \
           nvidia-open nvidia-utils \
           xorg xorg-server xorg-xinit xterm \
           mariadb `#database` \
-          lemurs greetd greetd-tuigreet `#display manager (login screen)` \
+          greetd greetd-tuigreet `#display manager (login screen)` \
           plasma `#desktop enviroment` \
           dolphin `#file explorer` \
           kitty  `#terminal emulator` \
