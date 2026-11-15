@@ -27,6 +27,7 @@ pacman -S base-devel linux-headers openssh sudo \
           okular `#pdf viewer` \
           ark `#archive viewer` \
           gimp \
+          blender cuda \
           filelight `#disk usage viewer`
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
