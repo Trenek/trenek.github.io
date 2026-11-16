@@ -8,6 +8,7 @@ pacman -S base-devel linux-headers openssh sudo \
           mariadb `#database` \
           greetd greetd-tuigreet `#display manager (login screen)` \
           cinnamon `#desktop enviroment` \
+          flameshot `#screenshots`
           dolphin `#file explorer` \
           kitty  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
