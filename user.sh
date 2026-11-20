@@ -7,6 +7,7 @@ aurInstall() {
 
 aurInstall "google-chrome"
 aurInstall "grub-theme-minegrub-world-selection-git"
+aurInstall "win11-clipboard-history-bin"
 
 sh ./grub-theme-minegrub-world-selection-git/install.sh
 sudo echo "GRUB_THEME=/boot/grub/themes/minegrub-world-selection/theme.txt" | sudo tee -a /etc/default/grub
