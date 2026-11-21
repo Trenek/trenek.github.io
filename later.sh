@@ -9,7 +9,7 @@ pacman -S base-devel linux-headers openssh sudo \
           greetd greetd-tuigreet `#display manager (login screen)` \
           cinnamon `#desktop enviroment` \
           flameshot `#screenshots` \
-          dolphin `#file explorer` \
+          nemo `#file explorer` \
           kitty  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
           sof-firmware alsa-utils `#for audio` \
