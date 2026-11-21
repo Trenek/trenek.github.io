@@ -29,7 +29,7 @@ pacman -S base-devel linux-headers openssh sudo \
           engrampa `#archive viewer` \
           gimp \
           blender cuda \
-          filelight `#disk usage viewer`
+          gdu `#disk usage viewer`
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
