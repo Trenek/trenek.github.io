@@ -25,7 +25,7 @@ pacman -S base-devel linux-headers openssh sudo \
           ghc haskell-language-server `#haskell` \
           discord \
           gnome-calculator `#kalkulator` \
-          okular `#pdf viewer` \
+          papers `#pdf viewer` \
           engrampa `#archive viewer` \
           gimp \
           blender cuda \
