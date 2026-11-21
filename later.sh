@@ -26,7 +26,7 @@ pacman -S base-devel linux-headers openssh sudo \
           discord \
           kalk `#kalkulator` \
           okular `#pdf viewer` \
-          ark `#archive viewer` \
+          engrampa `#archive viewer` \
           gimp \
           blender cuda \
           filelight `#disk usage viewer`
