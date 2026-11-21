@@ -4,7 +4,7 @@ pacman -S base-devel linux-headers openssh sudo \
           dosfstools `#FAT management (mkfs.fat, fsck.fat, fatlabel)` \
           networkmanager network-manager-applet wireless_tools wpa_supplicant dialog `#network things` \
           nvidia-open nvidia-utils \
-          xorg xorg-server xorg-xinit xterm \
+          xorg xorg-server xorg-xinit \
           mariadb `#database` \
           greetd greetd-tuigreet `#display manager (login screen)` \
           cinnamon `#desktop enviroment` \
