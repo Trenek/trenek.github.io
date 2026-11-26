@@ -13,7 +13,7 @@ pacman -S base-devel linux-headers openssh sudo \
           kitty  `#terminal emulator` \
           power-profiles-daemon `#wiatraczki, bateria` \
           sof-firmware alsa-utils `#for audio` \
-          git tree-sitter-cli unzip wget fd xclip `#for nvim config` \
+          git tree-sitter-cli unzip wget fd xclip ripgrep `#for nvim config` \
           cmake ninja valgrind gnuplot `#random dev` \
           texlive texlive-langpolish texlive-langcyrillic biber `# latex` \
           renderdoc `#debuging utils for graphics programming` \
